@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Irtiqa SME Facility | Structured Asset-Backed Financing</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -15,7 +16,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <!-- Configuration -->
     <script>
@@ -39,8 +42,10 @@
     </script>
 
     <style>
-        body { scroll-behavior: smooth; }
-        
+        body {
+            scroll-behavior: smooth;
+        }
+
         .chart-container {
             position: relative;
             width: 100%;
@@ -60,7 +65,9 @@
         }
 
         @media (max-width: 768px) {
-            .ladder-line { left: 20px; }
+            .ladder-line {
+                left: 20px;
+            }
         }
 
         .gradient-text {
@@ -71,14 +78,17 @@
         }
     </style>
 </head>
+
 <body class="bg-slate-50 text-slate-800">
 
     <!-- HERO SECTION -->
     <header class="bg-bank-primary text-white relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-        
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+        </div>
+
         <div class="container mx-auto px-6 py-20 relative z-10 text-center">
-            <div class="inline-block border border-bank-accent text-bank-accent px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+            <div
+                class="inline-block border border-bank-accent text-bank-accent px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
                 Islamic SME Financing Proposal
             </div>
             <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -88,7 +98,7 @@
                 "From Liquidity to Growth." <br>
                 A secured, asset-backed ecosystem bridging Pakistan's Missing Middle.
             </p>
-            
+
             <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-left">
                 <div class="bg-white/10 backdrop-blur-sm p-4 rounded border border-white/20">
                     <i class="fa-solid fa-shield-halved text-bank-accent mb-2"></i>
@@ -114,7 +124,10 @@
         <div class="text-center max-w-4xl mx-auto mb-16">
             <h2 class="font-serif text-3xl md:text-4xl font-bold text-bank-primary mb-4">The Strategic Objective</h2>
             <p class="text-lg text-slate-600">
-                To engineer an asset-backed ecosystem that transitions unbanked SMEs from <span class="font-bold text-bank-primary">short-term liquidity</span> (via Trade-Based Salam) to <span class="font-bold text-bank-primary">long-term growth</span> (via Equity-Based Mudarabah) using a mechanism that eliminates bank risk exposure.
+                To engineer an asset-backed ecosystem that transitions unbanked SMEs from <span
+                    class="font-bold text-bank-primary">short-term liquidity</span> (via Trade-Based Salam) to <span
+                    class="font-bold text-bank-primary">long-term growth</span> (via Equity-Based Mudarabah) using a
+                mechanism that eliminates bank risk exposure.
             </p>
         </div>
 
@@ -123,25 +136,29 @@
             <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-red-500 hover:shadow-lg transition-shadow">
                 <div class="text-red-500 text-3xl mb-4"><i class="fa-solid fa-ban"></i></div>
                 <h3 class="font-bold text-lg mb-2">Collateral Deadlock</h3>
-                <p class="text-sm text-slate-500">Banks have liquidity, but SMEs lack real estate. Result: SME financing is <7% of private credit.</p>
+                <p class="text-sm text-slate-500">Banks have liquidity, but SMEs lack real estate. Result: SME financing
+                    is <7% of private credit.</p>
             </div>
             <!-- Problem Card 2 -->
             <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-red-500 hover:shadow-lg transition-shadow">
                 <div class="text-red-500 text-3xl mb-4"><i class="fa-solid fa-user-secret"></i></div>
                 <h3 class="font-bold text-lg mb-2">Moral Hazard</h3>
-                <p class="text-sm text-slate-500">"Information Asymmetry" creates fear of under-reported profits or fund diversion in Mudarabah.</p>
+                <p class="text-sm text-slate-500">"Information Asymmetry" creates fear of under-reported profits or fund
+                    diversion in Mudarabah.</p>
             </div>
             <!-- Problem Card 3 -->
             <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-red-500 hover:shadow-lg transition-shadow">
                 <div class="text-red-500 text-3xl mb-4"><i class="fa-solid fa-money-bill-trend-up"></i></div>
                 <h3 class="font-bold text-lg mb-2">Ops Inefficiency</h3>
-                <p class="text-sm text-slate-500">Processing small loans costs the same as corporate loans, making traditional models unviable.</p>
+                <p class="text-sm text-slate-500">Processing small loans costs the same as corporate loans, making
+                    traditional models unviable.</p>
             </div>
             <!-- Problem Card 4 -->
             <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-red-500 hover:shadow-lg transition-shadow">
                 <div class="text-red-500 text-3xl mb-4"><i class="fa-solid fa-chart-line-down"></i></div>
                 <h3 class="font-bold text-lg mb-2">Price Risk</h3>
-                <p class="text-sm text-slate-500">In standard Salam, banks own the goods. If prices crash, the bank takes a loss.</p>
+                <p class="text-sm text-slate-500">In standard Salam, banks own the goods. If prices crash, the bank
+                    takes a loss.</p>
             </div>
         </div>
     </section>
@@ -157,71 +174,90 @@
 
             <div class="relative max-w-5xl mx-auto">
                 <!-- Vertical Line -->
-                <div class="ladder-line hidden md:block border-l-4 border-dashed border-slate-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+                <div
+                    class="ladder-line hidden md:block border-l-4 border-dashed border-slate-300 absolute h-full left-1/2 transform -translate-x-1/2">
+                </div>
 
                 <!-- TIER 1 -->
-                <div class="flex flex-col md:flex-row items-center justify-between mb-16 relative">
-                    <div class="md:w-5/12 text-right order-1 md:order-1 pr-8">
-                        <h3 class="font-bold text-2xl text-bank-primary">Tier 1: Secured Liquidity</h3>
+                <div class="flex flex-col md:flex-row items-center justify-between mb-12 md:mb-16 relative">
+                    <div
+                        class="md:w-5/12 text-center md:text-right order-1 md:order-1 mb-6 md:mb-0 px-4 md:pr-8 md:pl-0">
+                        <h3 class="font-bold text-xl md:text-2xl text-bank-primary">Tier 1: Secured Liquidity</h3>
                         <p class="text-sm text-bank-gold font-bold mb-2">Parallel Salam (Working Capital)</p>
                         <p class="text-slate-600 text-sm">
                             Designed for 30-90 day cycles. The bank funds production but never holds the bag.
                         </p>
                     </div>
-                    <div class="w-12 h-12 bg-bank-primary rounded-full flex items-center justify-center text-white text-xl font-bold z-10 order-2 md:order-2 border-4 border-white shadow-lg">1</div>
-                    <div class="md:w-5/12 pl-8 order-3 md:order-3">
+                    <div
+                        class="w-12 h-12 bg-bank-primary rounded-full flex items-center justify-center text-white text-xl font-bold z-10 order-2 md:order-2 border-4 border-white shadow-lg mb-6 md:mb-0">
+                        1</div>
+                    <div class="md:w-5/12 order-3 md:order-3 px-4 md:pl-8 md:pr-0">
                         <ul class="space-y-3 text-sm">
                             <li class="flex items-start">
-                                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                                <span><strong>Anchor Lock:</strong> Price locked via "Wa'ad" (Promise to Purchase) from Brand/Exporter before funding.</span>
+                                <i class="fa-solid fa-check text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Anchor Lock:</strong> Price locked via "Wa'ad" (Promise to Purchase) from
+                                    Brand/Exporter before funding.</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fa-solid fa-check text-green-500 mt-1 mr-2"></i>
-                                <span><strong>Closed Loop:</strong> Bank pays Supplier directly. SME gets yarn, not cash.</span>
+                                <i class="fa-solid fa-check text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                                <span><strong>Closed Loop:</strong> Bank pays Supplier directly. SME gets yarn, not
+                                    cash.</span>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- THE LOCK (HAMISH JIDDIYAH) -->
-                <div class="flex flex-col md:flex-row items-center justify-between mb-16 relative">
-                    <div class="md:w-5/12 text-right order-1 md:order-1 pr-8">
-                        <div class="bg-white p-4 rounded-lg shadow-md border-r-4 border-bank-gold">
+                <div class="flex flex-col md:flex-row items-center justify-between mb-12 md:mb-16 relative">
+                    <div
+                        class="md:w-5/12 text-center md:text-right order-1 md:order-1 mb-6 md:mb-0 px-4 md:pr-8 md:pl-0">
+                        <div
+                            class="bg-white p-4 rounded-lg shadow-md border-b-4 md:border-b-0 md:border-r-4 border-bank-gold">
                             <h4 class="font-bold text-bank-gold">The Innovation</h4>
                             <p class="text-xs text-slate-500">10-15% of SME Profit per cycle is frozen.</p>
                         </div>
                     </div>
-                    <div class="w-16 h-16 bg-bank-gold rounded-full flex items-center justify-center text-white text-2xl font-bold z-10 order-2 md:order-2 border-4 border-white shadow-xl">
+                    <div
+                        class="w-16 h-16 bg-bank-gold rounded-full flex items-center justify-center text-white text-2xl font-bold z-10 order-2 md:order-2 border-4 border-white shadow-xl my-6 md:my-0">
                         <i class="fa-solid fa-lock"></i>
                     </div>
-                    <div class="md:w-5/12 pl-8 order-3 md:order-3">
-                        <h3 class="font-bold text-xl text-slate-800">The "Hamish Jiddiyah" Accumulator</h3>
+                    <div class="md:w-5/12 order-3 md:order-3 px-4 md:pl-8 md:pr-0 text-center md:text-left">
+                        <h3 class="font-bold text-lg md:text-xl text-slate-800">The "Hamish Jiddiyah" Accumulator</h3>
                         <p class="text-sm text-slate-600 mt-2">
-                            From every trade cycle, the Bank retains profit in a frozen Security Deposit. Over 6-12 months, this builds <strong>Cash Collateral</strong>.
+                            From every trade cycle, the Bank retains profit in a frozen Security Deposit. Over 6-12
+                            months, this builds <strong>Cash Collateral</strong>.
                         </p>
                     </div>
                 </div>
 
                 <!-- TIER 2 -->
                 <div class="flex flex-col md:flex-row items-center justify-between relative">
-                    <div class="md:w-5/12 text-right order-1 md:order-1 pr-8">
+                    <div
+                        class="md:w-5/12 text-center md:text-right order-1 md:order-1 mb-6 md:mb-0 px-4 md:pr-8 md:pl-0">
                         <ul class="space-y-3 text-sm">
-                            <li class="flex items-center justify-end">
-                                <span><strong>Bank Role:</strong> Wakeel (Agent). No Capital Risk.</span>
-                                <i class="fa-solid fa-briefcase text-bank-primary ml-2"></i>
+                            <li class="flex items-center justify-center md:justify-end">
+                                <i
+                                    class="fa-solid fa-briefcase text-bank-primary mr-2 md:mr-0 md:ml-2 order-1 md:order-2"></i>
+                                <span class="order-2 md:order-1"><strong>Bank Role:</strong> Wakeel (Agent). No Capital
+                                    Risk.</span>
                             </li>
-                            <li class="flex items-center justify-end">
-                                <span><strong>Safety Net:</strong> Secured against accumulated Hamish Jiddiyah.</span>
-                                <i class="fa-solid fa-shield text-bank-primary ml-2"></i>
+                            <li class="flex items-center justify-center md:justify-end">
+                                <i
+                                    class="fa-solid fa-shield text-bank-primary mr-2 md:mr-0 md:ml-2 order-1 md:order-2"></i>
+                                <span class="order-2 md:order-1"><strong>Safety Net:</strong> Secured against
+                                    accumulated Hamish Jiddiyah.</span>
                             </li>
                         </ul>
                     </div>
-                    <div class="w-12 h-12 bg-bank-secondary rounded-full flex items-center justify-center text-white text-xl font-bold z-10 order-2 md:order-2 border-4 border-white shadow-lg">2</div>
-                    <div class="md:w-5/12 pl-8 order-3 md:order-3">
-                        <h3 class="font-bold text-2xl text-bank-secondary">Tier 2: Growth Engine</h3>
+                    <div
+                        class="w-12 h-12 bg-bank-secondary rounded-full flex items-center justify-center text-white text-xl font-bold z-10 order-2 md:order-2 border-4 border-white shadow-lg mb-6 md:mb-0">
+                        2</div>
+                    <div class="md:w-5/12 order-3 md:order-3 px-4 md:pl-8 md:pr-0 text-center md:text-left">
+                        <h3 class="font-bold text-xl md:text-2xl text-bank-secondary">Tier 2: Growth Engine</h3>
                         <p class="text-sm text-bank-gold font-bold mb-2">Restricted Mudarabah (Expansion)</p>
                         <p class="text-slate-600 text-sm">
-                            Unlocked after 10 cycles. Bank connects SME to HNW investors for expansion capital (Machinery/Scaling).
+                            Unlocked after 10 cycles. Bank connects SME to HNW investors for expansion capital
+                            (Machinery/Scaling).
                         </p>
                     </div>
                 </div>
@@ -238,7 +274,7 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            
+
             <!-- Bank Value -->
             <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-100">
                 <div class="bg-bank-primary p-6 text-white">
@@ -247,14 +283,16 @@
                 </div>
                 <div class="p-6 space-y-4">
                     <div class="flex items-start">
-                        <div class="bg-emerald-100 p-2 rounded text-bank-primary mr-3"><i class="fa-solid fa-check"></i></div>
+                        <div class="bg-emerald-100 p-2 rounded text-bank-primary mr-3"><i class="fa-solid fa-check"></i>
+                        </div>
                         <div>
                             <p class="font-bold text-sm">Zero Price Risk</p>
                             <p class="text-xs text-slate-500">Exit locked via Anchor Buyer.</p>
                         </div>
                     </div>
                     <div class="flex items-start">
-                        <div class="bg-emerald-100 p-2 rounded text-bank-primary mr-3"><i class="fa-solid fa-check"></i></div>
+                        <div class="bg-emerald-100 p-2 rounded text-bank-primary mr-3"><i class="fa-solid fa-check"></i>
+                        </div>
                         <div>
                             <p class="font-bold text-sm">Collateral Creation</p>
                             <p class="text-xs text-slate-500">Product manufactures its own security.</p>
@@ -263,9 +301,12 @@
                     <div class="border-t pt-4">
                         <p class="font-bold text-xs uppercase text-slate-400 mb-2">Revenue Streams</p>
                         <ul class="text-sm space-y-1">
-                            <li class="flex justify-between"><span>Funded:</span> <span class="font-bold text-bank-primary">Trade Spread</span></li>
-                            <li class="flex justify-between"><span>Non-Funded:</span> <span class="font-bold text-bank-gold">Wakalah Fees</span></li>
-                            <li class="flex justify-between"><span>Float:</span> <span class="font-bold text-slate-600">Deposit Income</span></li>
+                            <li class="flex justify-between"><span>Funded:</span> <span
+                                    class="font-bold text-bank-primary">Trade Spread</span></li>
+                            <li class="flex justify-between"><span>Non-Funded:</span> <span
+                                    class="font-bold text-bank-gold">Wakalah Fees</span></li>
+                            <li class="flex justify-between"><span>Float:</span> <span
+                                    class="font-bold text-slate-600">Deposit Income</span></li>
                         </ul>
                     </div>
                 </div>
@@ -279,21 +320,24 @@
                 </div>
                 <div class="p-6 space-y-4">
                     <div class="flex items-start">
-                        <div class="bg-slate-100 p-2 rounded text-slate-700 mr-3"><i class="fa-solid fa-check"></i></div>
+                        <div class="bg-slate-100 p-2 rounded text-slate-700 mr-3"><i class="fa-solid fa-check"></i>
+                        </div>
                         <div>
                             <p class="font-bold text-sm">No Real Estate Needed</p>
                             <p class="text-xs text-slate-500">Based on trade cycle & Anchor contracts.</p>
                         </div>
                     </div>
                     <div class="flex items-start">
-                        <div class="bg-slate-100 p-2 rounded text-slate-700 mr-3"><i class="fa-solid fa-check"></i></div>
+                        <div class="bg-slate-100 p-2 rounded text-slate-700 mr-3"><i class="fa-solid fa-check"></i>
+                        </div>
                         <div>
                             <p class="font-bold text-sm">Profit Retention</p>
                             <p class="text-xs text-slate-500">Trade-based costs fixed at start.</p>
                         </div>
                     </div>
                     <div class="flex items-start">
-                        <div class="bg-slate-100 p-2 rounded text-slate-700 mr-3"><i class="fa-solid fa-check"></i></div>
+                        <div class="bg-slate-100 p-2 rounded text-slate-700 mr-3"><i class="fa-solid fa-check"></i>
+                        </div>
                         <div>
                             <p class="font-bold text-sm">Growth Pathway</p>
                             <p class="text-xs text-slate-500">Clear roadmap to equity financing.</p>
@@ -333,7 +377,7 @@
     <section class="bg-bank-slate text-white py-16">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                
+
                 <!-- Economic Context -->
                 <div>
                     <h3 class="font-serif text-2xl font-bold mb-6 border-b border-slate-700 pb-2">Economic Context</h3>
@@ -341,7 +385,8 @@
                         <li>
                             <h4 class="font-bold text-bank-accent">Inflation & Interest Crisis</h4>
                             <p class="text-sm text-slate-400 mt-1">
-                                Policy rates >20% suffocate SMEs. Irtiqa offers trade-based fixed costs (Spot Price), insulating SMEs from rate hikes.
+                                Policy rates >20% suffocate SMEs. Irtiqa offers trade-based fixed costs (Spot Price),
+                                insulating SMEs from rate hikes.
                             </p>
                         </li>
                         <li>
@@ -361,28 +406,35 @@
 
                 <!-- Scalability Roadmap -->
                 <div>
-                    <h3 class="font-serif text-2xl font-bold mb-6 border-b border-slate-700 pb-2">Scalability Roadmap</h3>
+                    <h3 class="font-serif text-2xl font-bold mb-6 border-b border-slate-700 pb-2">Scalability Roadmap
+                    </h3>
                     <div class="space-y-6 relative pl-6 border-l border-slate-700">
-                        
+
                         <div class="relative">
-                            <span class="absolute -left-8 top-1 w-4 h-4 rounded-full bg-bank-primary border border-slate-900"></span>
+                            <span
+                                class="absolute -left-8 top-1 w-4 h-4 rounded-full bg-bank-primary border border-slate-900"></span>
                             <h4 class="font-bold">Phase 1: The "Wedge"</h4>
                             <p class="text-xs text-slate-400 uppercase tracking-widest mb-1">Textile & Surgical</p>
-                            <p class="text-sm text-slate-300">Partner with 5 Major Exporters. Finance their supply chain of 500 units.</p>
+                            <p class="text-sm text-slate-300">Partner with 5 Major Exporters. Finance their supply chain
+                                of 500 units.</p>
                         </div>
 
                         <div class="relative">
-                            <span class="absolute -left-8 top-1 w-4 h-4 rounded-full bg-bank-gold border border-slate-900"></span>
+                            <span
+                                class="absolute -left-8 top-1 w-4 h-4 rounded-full bg-bank-gold border border-slate-900"></span>
                             <h4 class="font-bold">Phase 2: The "Gig"</h4>
                             <p class="text-xs text-slate-400 uppercase tracking-widest mb-1">IT Freelancers</p>
-                            <p class="text-sm text-slate-300">Raw material becomes "Code." Anchor is Upwork/Fiverr contract. Algorithmic approval.</p>
+                            <p class="text-sm text-slate-300">Raw material becomes "Code." Anchor is Upwork/Fiverr
+                                contract. Algorithmic approval.</p>
                         </div>
 
                         <div class="relative">
-                            <span class="absolute -left-8 top-1 w-4 h-4 rounded-full bg-slate-500 border border-slate-900"></span>
+                            <span
+                                class="absolute -left-8 top-1 w-4 h-4 rounded-full bg-slate-500 border border-slate-900"></span>
                             <h4 class="font-bold">Phase 3: The "Marketplace"</h4>
                             <p class="text-xs text-slate-400 uppercase tracking-widest mb-1">Open P2P Mudarabah</p>
-                            <p class="text-sm text-slate-300">Bank becomes a platform. Open Tier 2 pools to retail investors via App.</p>
+                            <p class="text-sm text-slate-300">Bank becomes a platform. Open Tier 2 pools to retail
+                                investors via App.</p>
                         </div>
 
                     </div>
@@ -477,4 +529,5 @@
         });
     </script>
 </body>
+
 </html>

@@ -82,34 +82,60 @@
 <body class="bg-slate-50 text-slate-800">
 
     <!-- HERO SECTION -->
-    <header class="bg-bank-primary text-white relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+    <header
+        class="bg-gradient-to-br from-bank-primary via-emerald-800 to-bank-secondary text-white relative overflow-hidden">
+        <!-- Gradient Overlay for Depth -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/5 to-black/10"></div>
+
+        <!-- Pattern Overlay -->
+        <div class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
         </div>
 
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-400/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-teal-400/10 rounded-full blur-3xl"></div>
+
         <div class="container mx-auto px-6 py-20 relative z-10 text-center">
-            <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">
                 Kaar-Rawaan - <span class="text-bank-accent">Islamic SME Financing</span>
             </h1>
-            <p class="text-xl md:text-2xl text-emerald-100 font-light max-w-3xl mx-auto leading-relaxed">
+            <p class="text-xl md:text-2xl text-emerald-50 font-light max-w-3xl mx-auto leading-relaxed mb-2">
                 "From Liquidity to Growth." <br>
                 A secured, asset-backed ecosystem bridging Pakistan's Missing Middle.
             </p>
 
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-left">
-                <div class="bg-white/10 backdrop-blur-sm p-4 rounded border border-white/20">
-                    <i class="fa-solid fa-shield-halved text-bank-accent mb-2"></i>
-                    <h3 class="font-bold">Structured Collateral</h3>
-                    <p class="text-xs text-emerald-100">Hamish Jiddiyah Lock</p>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto text-left">
+                <!-- Card 1: Structured Collateral -->
+                <div
+                    class="group bg-white/15 backdrop-blur-md p-6 rounded-2xl border border-white/30 hover:bg-white/20 hover:border-white/40 hover:shadow-2xl hover:shadow-emerald-900/20 transition-all duration-300 hover:-translate-y-1">
+                    <div
+                        class="bg-gradient-to-br from-amber-400 to-amber-600 w-14 h-14 rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Structured Collateral</h3>
+                    <p class="text-sm text-emerald-100 leading-relaxed">Hamish Jiddiyah Lock</p>
                 </div>
-                <div class="bg-white/10 backdrop-blur-sm p-4 rounded border border-white/20">
-                    <i class="fa-solid fa-arrow-right-arrow-left text-bank-accent mb-2"></i>
-                    <h3 class="font-bold">Parallel Salam</h3>
-                    <p class="text-xs text-emerald-100">Zero Price Risk</p>
+
+                <!-- Card 2: Parallel Salam -->
+                <div
+                    class="group bg-white/15 backdrop-blur-md p-6 rounded-2xl border border-white/30 hover:bg-white/20 hover:border-white/40 hover:shadow-2xl hover:shadow-emerald-900/20 transition-all duration-300 hover:-translate-y-1">
+                    <div
+                        class="bg-gradient-to-br from-amber-400 to-amber-600 w-14 h-14 rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-arrow-right-arrow-left text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Parallel Salam</h3>
+                    <p class="text-sm text-emerald-100 leading-relaxed">Zero Price Risk</p>
                 </div>
-                <div class="bg-white/10 backdrop-blur-sm p-4 rounded border border-white/20">
-                    <i class="fa-solid fa-chart-line text-bank-accent mb-2"></i>
-                    <h3 class="font-bold">Growth Ladder</h3>
-                    <p class="text-xs text-emerald-100">Transition to Equity</p>
+
+                <!-- Card 3: Growth Ladder -->
+                <div
+                    class="group bg-white/15 backdrop-blur-md p-6 rounded-2xl border border-white/30 hover:bg-white/20 hover:border-white/40 hover:shadow-2xl hover:shadow-emerald-900/20 transition-all duration-300 hover:-translate-y-1">
+                    <div
+                        class="bg-gradient-to-br from-amber-400 to-amber-600 w-14 h-14 rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Growth Ladder</h3>
+                    <p class="text-sm text-emerald-100 leading-relaxed">Transition to Equity</p>
                 </div>
             </div>
         </div>
@@ -129,31 +155,51 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Problem Card 1 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-red-500 hover:shadow-lg transition-shadow">
-                <div class="text-red-500 text-3xl mb-4"><i class="fa-solid fa-ban"></i></div>
-                <h3 class="font-bold text-lg mb-2">Collateral Deadlock</h3>
-                <p class="text-sm text-slate-500">Banks have liquidity, but SMEs lack real estate. Result: SME financing
+            <div
+                class="group bg-gradient-to-br from-red-50 to-white p-6 rounded-2xl shadow-md border border-red-100 hover:shadow-2xl hover:border-red-200 hover:-translate-y-1 transition-all duration-300">
+                <div
+                    class="bg-gradient-to-br from-red-500 to-red-600 w-16 h-16 rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-ban text-white text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-lg md:text-xl mb-3 text-slate-800">Collateral Deadlock</h3>
+                <p class="text-base text-slate-600 leading-relaxed">Banks have liquidity, but SMEs lack real estate.
+                    Result: SME financing
                     is <7% of private credit.</p>
             </div>
             <!-- Problem Card 2 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-red-500 hover:shadow-lg transition-shadow">
-                <div class="text-red-500 text-3xl mb-4"><i class="fa-solid fa-user-secret"></i></div>
-                <h3 class="font-bold text-lg mb-2">Moral Hazard</h3>
-                <p class="text-sm text-slate-500">"Information Asymmetry" creates fear of under-reported profits or fund
+            <div
+                class="group bg-gradient-to-br from-red-50 to-white p-6 rounded-2xl shadow-md border border-red-100 hover:shadow-2xl hover:border-red-200 hover:-translate-y-1 transition-all duration-300">
+                <div
+                    class="bg-gradient-to-br from-red-500 to-red-600 w-16 h-16 rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-user-secret text-white text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-lg md:text-xl mb-3 text-slate-800">Moral Hazard</h3>
+                <p class="text-base text-slate-600 leading-relaxed">"Information Asymmetry" creates fear of
+                    under-reported profits or fund
                     diversion in Mudarabah.</p>
             </div>
             <!-- Problem Card 3 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-red-500 hover:shadow-lg transition-shadow">
-                <div class="text-red-500 text-3xl mb-4"><i class="fa-solid fa-money-bill-trend-up"></i></div>
-                <h3 class="font-bold text-lg mb-2">Ops Inefficiency</h3>
-                <p class="text-sm text-slate-500">Processing small loans costs the same as corporate loans, making
+            <div
+                class="group bg-gradient-to-br from-red-50 to-white p-6 rounded-2xl shadow-md border border-red-100 hover:shadow-2xl hover:border-red-200 hover:-translate-y-1 transition-all duration-300">
+                <div
+                    class="bg-gradient-to-br from-red-500 to-red-600 w-16 h-16 rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-money-bill-trend-up text-white text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-lg md:text-xl mb-3 text-slate-800">Ops Inefficiency</h3>
+                <p class="text-base text-slate-600 leading-relaxed">Processing small loans costs the same as corporate
+                    loans, making
                     traditional models unviable.</p>
             </div>
             <!-- Problem Card 4 -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-red-500 hover:shadow-lg transition-shadow">
-                <div class="text-red-500 text-3xl mb-4"><i class="fa-solid fa-arrow-trend-down"></i></div>
-                <h3 class="font-bold text-lg mb-2">Price Risk</h3>
-                <p class="text-sm text-slate-500">In standard Salam, banks own the goods. If prices crash, the bank
+            <div
+                class="group bg-gradient-to-br from-red-50 to-white p-6 rounded-2xl shadow-md border border-red-100 hover:shadow-2xl hover:border-red-200 hover:-translate-y-1 transition-all duration-300">
+                <div
+                    class="bg-gradient-to-br from-red-500 to-red-600 w-16 h-16 rounded-xl flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-arrow-trend-down text-white text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-lg md:text-xl mb-3 text-slate-800">Price Risk</h3>
+                <p class="text-base text-slate-600 leading-relaxed">In standard Salam, banks own the goods. If prices
+                    crash, the bank
                     takes a loss.</p>
             </div>
         </div>
@@ -328,95 +374,136 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
             <!-- Bank Value -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-100">
-                <div class="bg-bank-primary p-6 text-white">
-                    <h3 class="font-bold text-xl"><i class="fa-solid fa-building-columns mr-2"></i> For the Bank</h3>
-                    <p class="text-emerald-200 text-xs uppercase tracking-wide">Risk-Free Revenue</p>
+            <div
+                class="group bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                <div class="bg-gradient-to-br from-bank-primary to-emerald-700 p-8 text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+                    <div class="relative z-10">
+                        <div
+                            class="bg-white/20 backdrop-blur-sm w-14 h-14 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-building-columns text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold text-2xl mb-2">For the Bank</h3>
+                        <p class="text-emerald-100 text-sm uppercase tracking-wide">Risk-Free Revenue</p>
+                    </div>
                 </div>
-                <div class="p-6 space-y-4">
+                <div class="p-6 space-y-5">
                     <div class="flex items-start">
-                        <div class="bg-emerald-100 p-2 rounded text-bank-primary mr-3"><i class="fa-solid fa-check"></i>
+                        <div class="bg-emerald-100 p-3 rounded-xl text-bank-primary mr-4 flex-shrink-0">
+                            <i class="fa-solid fa-check text-lg"></i>
                         </div>
                         <div>
-                            <p class="font-bold text-sm">Zero Price Risk</p>
-                            <p class="text-xs text-slate-500">Exit locked via Anchor Buyer.</p>
+                            <p class="font-bold text-base mb-1">Zero Price Risk</p>
+                            <p class="text-sm text-slate-600 leading-relaxed">Exit locked via Anchor Buyer.</p>
                         </div>
                     </div>
                     <div class="flex items-start">
-                        <div class="bg-emerald-100 p-2 rounded text-bank-primary mr-3"><i class="fa-solid fa-check"></i>
+                        <div class="bg-emerald-100 p-3 rounded-xl text-bank-primary mr-4 flex-shrink-0">
+                            <i class="fa-solid fa-check text-lg"></i>
                         </div>
                         <div>
-                            <p class="font-bold text-sm">Collateral Creation</p>
-                            <p class="text-xs text-slate-500">Product manufactures its own security.</p>
+                            <p class="font-bold text-base mb-1">Collateral Creation</p>
+                            <p class="text-sm text-slate-600 leading-relaxed">Product manufactures its own security.</p>
                         </div>
                     </div>
-                    <div class="border-t pt-4">
-                        <p class="font-bold text-xs uppercase text-slate-400 mb-2">Revenue Streams</p>
-                        <ul class="text-sm space-y-1">
-                            <li class="flex justify-between"><span>Funded:</span> <span
-                                    class="font-bold text-bank-primary">Trade Spread</span></li>
-                            <li class="flex justify-between"><span>Non-Funded:</span> <span
-                                    class="font-bold text-bank-gold">Wakalah Fees</span></li>
-                            <li class="flex justify-between"><span>Float:</span> <span
-                                    class="font-bold text-slate-600">Deposit Income</span></li>
+                    <div class="border-t pt-5 bg-gradient-to-r from-emerald-50 to-transparent p-4 rounded-lg -mx-2">
+                        <p class="font-bold text-sm uppercase text-slate-500 mb-3">Revenue Streams</p>
+                        <ul class="text-base space-y-2">
+                            <li class="flex justify-between items-center">
+                                <span class="text-slate-600">Funded:</span>
+                                <span class="font-bold text-bank-primary">Trade Spread</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="text-slate-600">Non-Funded:</span>
+                                <span class="font-bold text-bank-gold">Wakalah Fees</span>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <span class="text-slate-600">Float:</span>
+                                <span class="font-bold text-slate-700">Deposit Income</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <!-- SME Value -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-100">
-                <div class="bg-slate-700 p-6 text-white">
-                    <h3 class="font-bold text-xl"><i class="fa-solid fa-industry mr-2"></i> For the SME</h3>
-                    <p class="text-slate-300 text-xs uppercase tracking-wide">Access & Growth</p>
+            <div
+                class="group bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                <div class="bg-gradient-to-br from-slate-700 to-slate-900 p-8 text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
+                    <div class="relative z-10">
+                        <div
+                            class="bg-white/20 backdrop-blur-sm w-14 h-14 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-industry text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold text-2xl mb-2">For the SME</h3>
+                        <p class="text-slate-300 text-sm uppercase tracking-wide">Access & Growth</p>
+                    </div>
                 </div>
-                <div class="p-6 space-y-4">
+                <div class="p-6 space-y-5">
                     <div class="flex items-start">
-                        <div class="bg-slate-100 p-2 rounded text-slate-700 mr-3"><i class="fa-solid fa-check"></i>
+                        <div class="bg-slate-100 p-3 rounded-xl text-slate-700 mr-4 flex-shrink-0">
+                            <i class="fa-solid fa-check text-lg"></i>
                         </div>
                         <div>
-                            <p class="font-bold text-sm">No Real Estate Needed</p>
-                            <p class="text-xs text-slate-500">Based on trade cycle & Anchor contracts.</p>
+                            <p class="font-bold text-base mb-1">No Real Estate Needed</p>
+                            <p class="text-sm text-slate-600 leading-relaxed">Based on trade cycle & Anchor contracts.
+                            </p>
                         </div>
                     </div>
                     <div class="flex items-start">
-                        <div class="bg-slate-100 p-2 rounded text-slate-700 mr-3"><i class="fa-solid fa-check"></i>
+                        <div class="bg-slate-100 p-3 rounded-xl text-slate-700 mr-4 flex-shrink-0">
+                            <i class="fa-solid fa-check text-lg"></i>
                         </div>
                         <div>
-                            <p class="font-bold text-sm">Profit Retention</p>
-                            <p class="text-xs text-slate-500">Trade-based costs fixed at start.</p>
+                            <p class="font-bold text-base mb-1">Profit Retention</p>
+                            <p class="text-sm text-slate-600 leading-relaxed">Trade-based costs fixed at start.</p>
                         </div>
                     </div>
                     <div class="flex items-start">
-                        <div class="bg-slate-100 p-2 rounded text-slate-700 mr-3"><i class="fa-solid fa-check"></i>
+                        <div class="bg-slate-100 p-3 rounded-xl text-slate-700 mr-4 flex-shrink-0">
+                            <i class="fa-solid fa-check text-lg"></i>
                         </div>
                         <div>
-                            <p class="font-bold text-sm">Growth Pathway</p>
-                            <p class="text-xs text-slate-500">Clear roadmap to equity financing.</p>
+                            <p class="font-bold text-base mb-1">Growth Pathway</p>
+                            <p class="text-sm text-slate-600 leading-relaxed">Clear roadmap to equity financing.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Anchor Value -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-100">
-                <div class="bg-bank-gold p-6 text-white">
-                    <h3 class="font-bold text-xl"><i class="fa-solid fa-handshake mr-2"></i> For the Anchor</h3>
-                    <p class="text-amber-100 text-xs uppercase tracking-wide">Supply Stability</p>
+            <div
+                class="group bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                <div class="bg-gradient-to-br from-bank-gold to-amber-700 p-8 text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+                    <div class="relative z-10">
+                        <div
+                            class="bg-white/20 backdrop-blur-sm w-14 h-14 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-handshake text-3xl"></i>
+                        </div>
+                        <h3 class="font-bold text-2xl mb-2">For the Anchor</h3>
+                        <p class="text-amber-100 text-sm uppercase tracking-wide">Supply Stability</p>
+                    </div>
                 </div>
-                <div class="p-6 space-y-4">
+                <div class="p-6 space-y-5">
                     <div class="flex items-start">
-                        <div class="bg-amber-50 p-2 rounded text-bank-gold mr-3"><i class="fa-solid fa-check"></i></div>
+                        <div class="bg-amber-50 p-3 rounded-xl text-bank-gold mr-4 flex-shrink-0">
+                            <i class="fa-solid fa-check text-lg"></i>
+                        </div>
                         <div>
-                            <p class="font-bold text-sm">Supply Chain Stability</p>
-                            <p class="text-xs text-slate-500">Suppliers have cash to deliver on time.</p>
+                            <p class="font-bold text-base mb-1">Supply Chain Stability</p>
+                            <p class="text-sm text-slate-600 leading-relaxed">Suppliers have cash to deliver on time.
+                            </p>
                         </div>
                     </div>
                     <div class="flex items-start">
-                        <div class="bg-amber-50 p-2 rounded text-bank-gold mr-3"><i class="fa-solid fa-check"></i></div>
+                        <div class="bg-amber-50 p-3 rounded-xl text-bank-gold mr-4 flex-shrink-0">
+                            <i class="fa-solid fa-check text-lg"></i>
+                        </div>
                         <div>
-                            <p class="font-bold text-sm">Free Due Diligence</p>
-                            <p class="text-xs text-slate-500">Bank vets the suppliers for them.</p>
+                            <p class="font-bold text-base mb-1">Free Due Diligence</p>
+                            <p class="text-sm text-slate-600 leading-relaxed">Bank vets the suppliers for them.</p>
                         </div>
                     </div>
                 </div>
